@@ -32,7 +32,12 @@ button {
 }
 
 .center-image {
-    max-width: 80%; /* Ensures the image doesn't exceed 80% of the screen width */
+    width: 80%;  /* Default to 80% width on smaller screens */
     height: auto;
-    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .center-image {
+        width: 50%;  /* On larger screens, the image will be 50% width */
+    }
 }
