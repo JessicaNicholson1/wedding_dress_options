@@ -1,7 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center; /* Center text and elements */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    min-height: 100vh; /* Ensures full viewport height */
+    text-align: center;
 }
 
 form {
@@ -18,12 +24,15 @@ button {
 
 .image-container {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Vertically centers the image */
+    width: 100%; /* Ensures the container spans the full width */
+    height: auto;
     margin-bottom: 20px;
 }
 
 .center-image {
-    max-width: 100%; /* Ensures the image doesn't exceed the screen width */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: adds rounded corners */
+    max-width: 80%; /* Ensures the image doesn't exceed 80% of the screen width */
+    height: auto;
+    border-radius: 10px;
 }
