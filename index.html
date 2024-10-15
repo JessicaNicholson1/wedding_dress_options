@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Dress Registry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wedding Dress Registry</h1>
+    <form id="dressForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="dress">Dress Description:</label>
+        <input type="text" id="dress" name="dress" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Logged Dresses</h2>
+    <ul id="dressList"></ul>
 
+    <script src="scripts.js"></script>
+</body>
+</html>
